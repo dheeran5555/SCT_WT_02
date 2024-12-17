@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="LOGO.png">
+    
+</head>
+<body>
+    <div class="conainter">
+        <div class="watch">
+            <div class="outer-circle">
+                <div class="inner-circle">
+                    <span id="sec" class="text sec">00:00:00</span>
+                </div>
+
+            </div>
+
+        </div>
+        <div  class="button-wrapper">
+            <button id="rbtn" class="button" onclick="reset()">Reset</button>
+            <button id="pbtn" class="button" onclick="play()">Play</button>
+            <button id="lbtn" class="button" onclick="lap()">Laps</button>
+        </div>
+        <div id="laps" class="laps">
+            
+            
+        </div>
+        <button id="clearbutton" onclick="clearAll()" class="lap-clear-button">Clear All</button>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>
